@@ -1,0 +1,434 @@
+@font-face {
+    font-family: "poppins";
+    src: url("./Font/Poppins-Regular.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins";
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  */
+.btn{
+    background-color: transparent;
+    border: 1px solid #5E72EB;
+    border-radius: 10px;
+    padding: 10px 30px 10px 30px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: #5E72EB;
+    transition: all ease 0.4s;
+}
+.btn:hover{
+    background-color: #5E72EB;
+    color: white;
+}
+/* Responsive btn  */
+@media (max-width:1115px) {
+    .btn{
+        padding: 8px 27px 8px 27px;
+        font-size: 21px;
+    }
+}
+ 
+/* For res button  */
+@media (max-width:438px) {
+    .resBtn{
+        padding: 5px 20px;
+        font-size: 18px;
+    }
+}
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  */
+main{
+    max-width: 1440px;
+    width: 100%;
+    margin-inline: auto;
+}
+nav{
+    width: 100%;
+    background-color: aliceblue;
+}
+nav #top_nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+    justify-content: right;
+}
+nav #top_nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+}
+#top_nav button{
+    color: white;
+    padding: 7px 26px;
+    background-color: #5E72EB;
+    border-radius: 20px;
+    line-height: 18px;
+    border: none;
+    margin-inline: 30px;
+    cursor: pointer;
+}
+/* ++++++++++++++++++++++++++++++++++++++++++++++++  */
+/* Bottom Nav  */
+#down_nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 25px;
+}
+#down_nav ul{
+    display: flex;
+    list-style: none;
+    gap: 6vw;
+}
+.res_controler{
+    display: none;
+}
+@media (max-width:1024px) {
+    nav #top_nav ul{
+        gap: 25px;
+    }
+    #top_nav button{
+        margin-inline: 25px;
+    }
+    /* Bottom Nav  */
+    #down_nav{
+        padding: 8px 19px;
+    }
+    #down_nav ul{
+        gap: 3vw;
+    }
+}
+@media (max-width:768px) {
+    nav #top_nav ul{
+        gap: 20px;
+    }
+    #top_nav button{
+        padding: 7px 22px;
+        margin-inline: 20px;
+    }
+    .res_controler{
+        display: block;
+    }
+    #down_nav ul{
+        display: none;
+    }
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  */
+/* header  */
+header{
+    width: 100%;
+    min-height: 85vh;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 7vw;
+    align-items: center;
+    /* background-color: red; */
+}
+#image{
+    width: 612px;
+    height: 514px;
+    /* background-color: green; */
+}
+#image img{
+    width: 100%;
+    height: 100%;
+}
+#text{
+    text-align: center;
+}
+#text h1{
+    color: #5E72EB;
+    font-size: 48px;
+    line-height: 72px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+/* Reasponsive Header Section  */
+@media (max-width:1115px) {
+    header{
+    padding-inline: 4vw;
+}
+#image{
+    width: 390px;
+    height: 410px;
+    /* background-color: green; */
+}
+#text h1{
+    font-size: 41px;
+    margin-bottom: 18px;
+}
+}
+@media (max-width:768px) {
+    header{
+        margin-top: 20px;
+        min-height: 85vh;
+        flex-direction: column;
+    }
+    #image{
+        width: 370px;
+        height: 350px;
+        /* background-color: green; */
+    }
+}
+@media (max-width:425px) {
+    #image{
+        width: 340px;
+    }
+}
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  */
+#Info{
+    width: 100%;
+    text-align: center;
+    padding: 20px 25px;
+    margin: 10px 0px;
+}
+#Info h3{
+    color: #EB564F;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 54px;
+    margin: 10px 0px;
+}
+.desc h4{
+    /* line-height: 60px; */
+    font-size: 40px;
+    font-weight: 600;
+    margin: 20px 0px;
+}
+.desc p{
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
+/* Responsive Info Section  */
+@media (max-width:1024px) {
+    #Info{
+        padding: 15px 15px;
+        margin: 6px 0px;
+    }
+    #Info h3{
+        font-size: 32px;
+        line-height: 30px;
+        margin: 0px 0px;
+    }
+    .desc h4{
+        font-size: 24px;
+        margin: 18px 0px;
+    }
+    .desc p{
+        line-height: 30px;
+        font-size: 18px;
+    }
+}
+@media (max-width:768px) {
+    #Info{
+        padding: 5px 15px;
+        margin: 50px 0px;
+    }
+    #Info h3{
+        font-size: 22px;
+        line-height: 1;
+    }
+    .desc h4{
+        /* line-height: 60px; */
+        font-size: 20px;
+        margin: 10px 0px;
+    }
+    .desc p{
+        line-height: 20px;
+        font-weight: 500;
+        font-size: 16px;
+    }
+}
+@media (max-width:528px) {
+    #Info{
+        padding: 5px 5px;
+        margin-bottom: 20px;
+    }
+    #Info h3{
+        font-size: 14px;
+    }
+    .desc h4{
+        line-height: 20px;
+        font-size: 15px;
+        margin: 10px 0px;
+    }
+    .desc p{
+        line-height: 15px;
+        font-size: 12px;
+    }
+}
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  */
+#container{
+    width: 100%;
+    margin: 50px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+#container .card{
+    border: 1px solid #7B7B7B;
+    border-radius: 30px;
+    padding: 30px 30px;
+    width: 400px;
+    height: 400px;
+    margin: 20px;
+}
+.card h2{
+    margin-bottom: 18px;
+    margin-top: 5px;
+}
+.card p{
+    font-size: 20px;
+    color: #3A3939;
+}
+/* Responsive container and cards  */
+@media (max-width:887px) {
+    #container{
+        margin: 20px 0px;
+    }
+    #container .card{
+        padding: 10px 18px;
+        width: 280px;
+        height: 280px;
+        margin: 15px;
+    }
+    .card img{
+        width: 80px;
+    }
+    .card h2{
+        margin-bottom: 9px;
+        font-size: 21px;
+        margin-top: 2px;
+    }
+    .card p{
+        font-size: 14px;
+    }
+}
+@media (max-width:623px) {
+    #container{
+        margin: 10px 0px;
+    }
+    #container .card{
+        padding: 10px 15px;
+        width: 220px;
+        height: 220px;
+        margin: 8px;
+    }
+    .card img{
+        width: 60px;
+    }
+    .card h2{
+        margin-bottom: 5px;
+        font-size: 18px;
+        margin-top: 1px;
+    }
+    .card p{
+        font-size: 12px;
+    }
+}
+@media (max-width:473px) {
+    #container{
+        margin: 0px 0px;
+    }
+    #container .card{
+        padding: 20px 15px;
+        width: 300px;
+        height: 270px;
+        margin: 8px;
+    }
+    .card img{
+        width: 75px;
+    }
+    .card h2{
+        margin-bottom: 5px;
+        font-size: 20px;
+        margin-top: 1px;
+    }
+    .card p{
+        font-size: 14px;
+    }
+}
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  */
+#work{
+    width: 100%;
+    text-align: center;
+    margin-block: 30px;
+}
+#work h4{
+    font-size: 30px;
+    line-height: 45px;
+}
+#work h2{
+    /* margin-block: 25px; */
+    font-size: 48px;
+    line-height: 72px;
+}
+#work p{
+    line-height: 30px;
+    font-size: 20px;
+    color:#515151;
+    margin-bottom: 25px;
+    margin-top: 10px;
+}
+/* Responsive work page  */
+@media (max-width:889px) {
+    #work h4{
+        font-size: 20px;
+        line-height: 20px;
+    }
+    #work h2{
+        /* margin-block: 25px; */
+        font-size: 31px;
+        line-height: 65px;
+    }
+    #work p{
+        line-height: 23px;
+        font-size: 16px;
+    }
+}
+@media (max-width:553px) {
+    #work h4{
+        font-size: 19px;
+        line-height: 15px;
+    }
+    #work h2{
+        /* margin-block: 25px; */
+        font-size: 23px;
+        line-height: 40px;
+    }
+    #work p{
+        line-height: 20px;
+        font-size: 14px;
+    }
+}
+@media (max-width:462px) {
+    #work h4{
+        font-size: 17px;
+        line-height: 35px;
+    }
+    #work h2{
+        /* margin-block: 25px; */
+        font-size: 18px;
+        line-height: 30px;
+    }
+    #work p{
+        line-height: 20px;
+        font-size: 13px;
+        margin-bottom: 15px;
+
+    }
+}
