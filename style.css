@@ -176,6 +176,7 @@ header{
         flex-direction: column;
     }
     #image{
+        margin-top: 20px;
         width: 370px;
         height: 350px;
         /* background-color: green; */
@@ -183,7 +184,9 @@ header{
 }
 @media (max-width:425px) {
     #image{
-        width: 340px;
+        margin-top: 30px;
+        width: 320px;
+        height: 310px;
     }
 }
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  */
@@ -253,7 +256,7 @@ header{
 }
 @media (max-width:528px) {
     #Info{
-        padding: 5px 5px;
+        padding: 5px 8px;
         margin-bottom: 20px;
     }
     #Info h3{
@@ -263,10 +266,12 @@ header{
         line-height: 20px;
         font-size: 15px;
         margin: 10px 0px;
+        text-align: left;
     }
     .desc p{
         line-height: 15px;
         font-size: 12px;
+        text-align: left;
     }
 }
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  */
@@ -345,7 +350,7 @@ header{
     }
     #container .card{
         padding: 20px 15px;
-        width: 300px;
+        width: 330px;
         height: 270px;
         margin: 8px;
     }
