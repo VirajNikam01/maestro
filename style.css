@@ -604,3 +604,170 @@ header{
     }
 }
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  */
+#testimonials{
+    width: 100%;
+    text-align: center;
+    margin-block: 50px;
+}
+#testimonials h4{
+    font-size: 30px;
+    line-height: 36.31px;
+}
+#testimonials h2{
+    font-size: 48px;
+    line-height: 58.09px;
+}
+#testimonials #card{
+    width: 500px;
+    border-radius: 80px;
+    /* box-shadow: 2px 2px 4px 0px #00000040 inset; */
+    box-shadow: -2px -2px 4px 0px #00000040 inset;
+    padding: 50px 20px;
+}
+#testimonials h6{
+    font-size: 16px;
+    line-height: 24px;
+}
+#testimonials .para{
+    position: relative;
+    max-width: 380px;
+    height: 289px;
+    font-size: 16px;
+    overflow: hidden;
+    padding: 8px;
+    margin-inline: auto;
+    margin-top: 22px;
+}
+.filter{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.783), transparent);
+    height: 100%;
+    width: 100%;
+}
+#testimonials a{
+    text-decoration: none;
+    padding: 10px;
+}
+/* Responsive Testimonials  */
+@media (max-width:535px) {
+    #testimonials h4{
+        font-size: 25px;
+        line-height: 36.31px;
+    }
+    #testimonials h2{
+        font-size: 38px;
+        line-height: 58.09px;
+    }
+}
+@media (max-width:425px) {
+    #testimonials h4{
+        font-size: 25px;
+        line-height: 30.31px;
+    }
+    #testimonials h2{
+        font-size: 28px;
+        line-height: 45.09px;
+    }
+    #testimonials .para{
+        margin-top: 10px;
+        font-size: 14px;
+    }
+    #testimonials #card{
+        border-radius: 80px;
+        border: 1px solid #3A3939;
+        padding: 20px 10px;
+        margin-block: 30px;
+        width: 95%;
+        margin-inline: auto;
+    }
+}
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  */
+#contact{
+    width: 100%;
+    background: url(./Images/contact.png), linear-gradient(89.83deg, #FFFFFF 14.24%, #FFFFFF 14.25%, rgba(255, 255, 255, 0) 99.55%);
+    object-fit: cover;
+    height: 670px;
+    padding: 6vw;
+}
+#head{
+    margin: 5px;
+}
+#contact h6{
+    font-size: 16px;
+    font-weight: 700;
+}
+#contact h2{
+    font-size: 40px;
+    line-height: 50px;
+}
+form{
+    width: 602px;
+}
+form input{
+    width: 285px;
+    margin: 5px;
+    border: 1px solid #E6E6E6;
+    padding: 10px;
+    outline: none;
+    background: linear-gradient(0deg, #E6E6E6, #E6E6E6),
+linear-gradient(0deg, #F9F9F9, #F9F9F9);
+
+}
+form select{
+    width: 285px;
+    margin: 5px;
+    border: 1px solid #E6E6E6;
+    padding: 10px;
+    outline: none;
+    background: linear-gradient(0deg, #E6E6E6, #E6E6E6),
+linear-gradient(0deg, #F9F9F9, #F9F9F9);
+}
+textarea{
+    width: 587px;
+    margin: 5px;
+    border: 1px solid #E6E6E6;
+    padding: 10px;
+    height: 140px;
+    background: linear-gradient(0deg, #E6E6E6, #E6E6E6),
+    linear-gradient(0deg, #F9F9F9, #F9F9F9);
+    outline: none;
+    margin-bottom: 30px;
+}
+/* Responsive contact Page  */
+@media (max-width:645px) {
+    #contact{
+        object-fit: cover;
+        height: fit-content;
+        padding: 3vw;
+    }
+    #head{
+        margin: 0px;
+    }
+    #contact h6{
+        font-size: 16px;
+        font-weight: 700;
+    }
+    #contact h2{
+        font-size: 40px;
+        line-height: 50px;
+    }
+    form{
+        width: 100%;
+    }
+    form input{
+        width: 100%;
+        margin-block: 5px;
+    }
+    form select{
+        width: 100%;
+        margin-block: 5px;
+    }
+    textarea{
+        width: 100%;
+        margin-block: 5px;
+        margin-bottom: 10px;
+    }
+}
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  */
