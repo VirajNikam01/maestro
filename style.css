@@ -129,7 +129,7 @@ nav #top_nav ul{
 /* header  */
 header{
     width: 100%;
-    min-height: 85vh;
+    min-height: 20vh;
     display: flex;
     justify-content: space-between;
     padding-inline: 7vw;
@@ -173,7 +173,6 @@ header{
 @media (max-width:768px) {
     header{
         margin-top: 20px;
-        min-height: 85vh;
         flex-direction: column;
     }
     #image{
