@@ -131,6 +131,16 @@ nav #top_nav ul{
     #down_nav ul{
         display: none;
     }
+    #top_nav ul li{
+        font-size: 14px;
+    }
+    nav #top_nav ul{
+        gap: 18px;
+    }
+    #top_nav button{
+        padding: 8px 20px;
+        margin-inline: 10px;
+    }
 }
 
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  */
@@ -833,6 +843,7 @@ footer{
     padding: 3px 8px;
     border: none;
     outline: none;
+    border-radius: 5px;
 }
 .subscribe_bar .sub_btn{
     background-color: #CFD5FF;
