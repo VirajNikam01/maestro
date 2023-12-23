@@ -309,6 +309,11 @@ header{
     width: 400px;
     height: 400px;
     margin: 20px;
+    transition: all ease 0.8s;
+    cursor: pointer;
+}
+#container .card:hover{
+    background-color: #d6e7ed;
 }
 .card h2{
     margin-bottom: 18px;
@@ -469,6 +474,19 @@ header{
     display: flex;
     flex-direction: column;
     gap: 8px;
+}
+#portfolio div img{
+    transition: all ease 0.5s;
+}
+#portfolio div img:hover{
+    scale: 1.05;
+}
+#portfolio .first{
+    transition: all ease 0.5s;
+}
+#portfolio .first:hover{
+    transform: rotate(-7deg);
+    transform-origin: 0 100%;
 }
 #portfolio img{
     display: inline-block;
